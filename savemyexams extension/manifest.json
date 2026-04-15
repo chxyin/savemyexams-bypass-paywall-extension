@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "SaveMyExams LocalStorage Clearer",
+  "version": "1.0",
+  "description": "Automatically clears specific local storage items on SaveMyExams to reset view limits.",
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*.savemyexams.com/*"
+      ],
+      "js": ["content.js"],
+      "run_at": "document_start"
+    }
+  ]
+}
